@@ -1,5 +1,5 @@
 .hero-image {
-    background-image: url(/img/hero.jpg);
+    background-image: url(/img/hero.jpeg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -8,16 +8,5 @@
     display: block;
     height: 70vh;
     width: 100%;
-}
-
-.hero-image::before {
-    display: block;
-    position: absolute;
-    content: '';
-    top: 50px;
-    left: 0;
-    right: 0;
-    bottom: 125px;
-    background: #000000;
-    opacity: 0.4;
+    max-width: 100%;
 }

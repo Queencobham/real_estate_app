@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link } from 'react-router-dom'
 
+import SearchForm from '../search/SearchForm'
 
 class HomePage extends Component {
 
@@ -8,7 +9,7 @@ class HomePage extends Component {
 		
 		return (
 			<header>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav className="navbar navbar-expand-lg navbar-light navbar-fixed-top bg-light">
           <div className="container">
             <Link className="navbar-brand" to="/">Real Estate App</Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,12 +35,16 @@ class HomePage extends Component {
         </nav>
         <div className="hero-image" style={{width:'100%'}}>
           <div className="row">
-            <div className="col-xs-12 col-sm-10 col-md-8 col-lg-8 mx-auto text-center">
+            <div className="col-xs-12 col-sm-10 col-md-8 col-lg-8 mx-auto mb-3">
               <h1 className="text-light mt-5" style={{fontSize: '3rem'}}>Your Dream Home. A Click Away.</h1>
+            </div>
+            <div className="col-xs-12 col-sm-10 col-md-6 col-lg-6 mx-auto mt-5">
+              <SearchForm />
             </div>
           </div>
         </div>
 
+        
 			</header>
 		);
 	}
